@@ -1,5 +1,6 @@
-import Demo, { Demo2, MyButton } from "./Demo";
+import TextHolder from "./TextHolder";
+import TextHolderInsertable from "./TextHolderInsertable";
 
-export default Demo;
+export default TextHolderInsertable;
 
-export { Demo2, MyButton };
+export { TextHolder };
