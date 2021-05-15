@@ -1,6 +1,6 @@
 {
   "name": "react-text-holder-insertable",
-  "version": "0.0.1",
+  "version": "0.0.16",
   "description": "insert text holder block to content editable area",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
