@@ -1,10 +1,11 @@
 {
-  "name": "react-npm-lib-template",
-  "version": "0.0.1",
-  "description": "npm react library release template",
+  "name": "react-text-holder-insertable",
+  "version": "0.0.17",
+  "description": "insert text holder block to content editable area",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
+  "keywords": ["react", "text", "placeholder", "contenteditable"],
   "engines": {
     "node": ">=12"
   },
@@ -15,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1846689910/react-npm-lib-template.git"
+    "url": "git+https://github.com/1846689910/react-text-holder-insertable.git"
   },
   "author": "1846689910",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/1846689910/react-npm-lib-template/issues"
+    "url": "https://github.com/1846689910/react-text-holder-insertable/issues"
   },
-  "homepage": "https://github.com/1846689910/react-npm-lib-template#readme",
+  "homepage": "https://github.com/1846689910/react-text-holder-insertable#readme",
   "peerDependencies": {
     "react": "^16.0.0"
   },
@@ -40,7 +41,9 @@
     "dist"
   ],
   "dependencies": {
-    "@material-ui/core": "^4.11.4",
-    "lodash": "^4.17.21"
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.7.2",
+    "react-contenteditable": "^3.3.5"
   }
 }

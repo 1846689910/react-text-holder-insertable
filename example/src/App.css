@@ -1,6 +1,17 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
+
+
+div[contenteditable="true"] {
+  font-family: sans-serif;
+  margin: 50px;
+  min-height: 50px;
+  border: 1px dashed #aaa;
+  padding: 5px;
+}
+
 
 .App-logo {
   height: 40vmin;
