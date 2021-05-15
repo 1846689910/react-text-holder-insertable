@@ -9,7 +9,7 @@
     "node": ">=12"
   },
   "scripts": {
-    "build": "node scripts/clean && microbundle-crl --no-compress --format modern,cjs",
+    "build": "node scripts/clean && microbundle-crl --no-compress --format modern,cjs --css-modules=false",
     "watch": "microbundle-crl watch --no-compress --format modern,cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import ContentEditable from "react-contenteditable";
 import $ from "jquery";
+import "./text-holder.css";
+
 
 export default function TextHolderInsertable({
   html,
