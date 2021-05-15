@@ -1,5 +1,6 @@
 import $ from "jquery";
 import { get } from "lodash";
+import style from "./text-holder.module.css";
 export default class TextHolder {
   /**
    *
@@ -19,17 +20,20 @@ export default class TextHolder {
    */
   getJq = () => {
     const holderLabel = $("<span/>")
-      .addClass("text-holder-label")
+      // .addClass("text-holder-label")
+      .addClass(style["text-holder-label"])
       .css(this.options.textHolderLabelStyle || {})
       .html(this.label);
     const jq = $("<span/>")
-      .addClass("text-holder")
+      // .addClass("text-holder")
+      .addClass(style["text-holder"])
       .css(this.options.textHolderStyle || {})
       .attr("contenteditable", "false")
       .append(holderLabel);
     if (this.options.withCancel) {
       const holderCancel = $("<span/>")
-        .addClass("text-holder-cancel")
+        // .addClass("text-holder-cancel")
+        .addClass(style["text-holder-cancel"])
         .css(this.options.textHolderCancelStyle || {})
         .html("x");
       jq.append(holderCancel);

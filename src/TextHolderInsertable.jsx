@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import ContentEditable from "react-contenteditable";
 import $ from "jquery";
-import "./text-holder.css";
-
+import style from "./text-holder.module.css";
 
 export default function TextHolderInsertable({
   html,
@@ -35,7 +34,7 @@ export default function TextHolderInsertable({
 
   function getText() {
     const jq = $("<div/>").html(__html);
-    jq.find(".text-holder-cancel").each((_, ele) => $(ele).remove());
+    jq.find(`.${style["text-holder-cancel"]}`).each((_, ele) => $(ele).remove());
     return jq.text();
   }
 
@@ -53,7 +52,7 @@ export default function TextHolderInsertable({
     const jq = $(e.target);
 
     if (
-      ["text-holder", "text-holder-label", "text-holder-cancel"].every(
+      [style["text-holder"], style["text-holder-label"], style["text-holder-cancel"]].every(
         (className) => !jq.hasClass(className),
       )
     ) {
@@ -64,7 +63,7 @@ export default function TextHolderInsertable({
   };
 
   const handleClick = (e) => {
-    if ($(e.target).hasClass("text-holder-cancel")) {
+    if ($(e.target).hasClass(style["text-holder-cancel"])) {
       const box = e.target.parentNode.parentNode;
       $(e.target.parentNode).remove();
       __setHtml($(box).html());
